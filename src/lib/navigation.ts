@@ -10,7 +10,7 @@ export type NavSection = {
 
 export const companyInfo = {
   name: "Blooming Bell",
-  tagline: "VR占いワールド",
+  tagline: "VRで占いと、深く出会う。",
   address: "",
   tel: "",
   socialLinks: {
@@ -23,42 +23,31 @@ export const companyInfo = {
 
 export const footerNav: NavSection[] = [
   {
-    title: "VR体験",
+    title: "講座案内",
     items: [
-      { label: "VR体験案内", href: "/vr" },
-      { label: "ワールド一覧", href: "/vr/worlds" },
-      { label: "キャラクター占い師", href: "/vr/characters" },
-      { label: "スペシャルイベント", href: "/vr/events" },
-      { label: "体験ログ（会員）", href: "/mypage/logs" },
+      { label: "VRセッションスケジュール", href: "/sessions" },
+      { label: "基礎コース", href: "/vr/courses" },
+      { label: "アカデミー", href: "/about/academy" },
+      { label: "録画アーカイブ", href: "/about/academy/recordings" },
+      { label: "認定占い師メンバー", href: "/about/academy/members" },
     ],
   },
   {
-    title: "占いツール・サービス",
+    title: "ツール・サービス",
     items: [
-      { label: "AI占い - ORACLE", href: "/tools/oracle" },
-      { label: "タロット占い", href: "/tools/tarot" },
-      { label: "星座占い", href: "/tools/horoscope" },
-      { label: "数秘術", href: "/tools/numerology" },
-      { label: "手相診断", href: "/tools/palmistry" },
-      { label: "運勢カレンダー", href: "/tools/calendar" },
-      { label: "占いの教科書", href: "/learn" },
-      { label: "ショップ", href: "/shop" },
+      { label: "AI鑑定 - ORACLE", href: "/tools/oracle" },
+      { label: "占いの部屋", href: "/fortune/tellers/room" },
+      { label: "鑑定サービス", href: "/fortune/tellers" },
+      { label: "運勢カレンダー", href: "/fortune/calendar" },
+      { label: "書籍・テキスト", href: "/books" },
     ],
   },
   {
     title: "Blooming Bellについて",
     items: [
-      { label: "ミッション", href: "/about/mission" },
-      { label: "開発チーム", href: "/about/team" },
-      { label: "世界観・ロア", href: "/about/lore" },
-      { label: "ユーザーの声", href: "/about/reviews" },
-    ],
-  },
-  {
-    title: "サポート",
-    items: [
-      { label: "よくある質問", href: "/support/faq" },
-      { label: "お問い合わせ", href: "/support/contact" },
+      { label: "VRで始める", href: "/start" },
+      { label: "よくある質問", href: "/faq" },
+      { label: "お問い合わせ", href: "/contact" },
       { label: "特定商取引法表記", href: "/legal/tokusho" },
       { label: "プライバシーポリシー", href: "/legal/privacy" },
       { label: "利用規約", href: "/legal/terms" },
@@ -68,39 +57,36 @@ export const footerNav: NavSection[] = [
 
 export const headerNav: NavSection[] = [
   {
-    title: "VR体験",
+    title: "VR体験・講座",
     items: [
-      { label: "VR体験案内", href: "/vr" },
-      { label: "ワールド一覧", href: "/vr/worlds" },
-      { label: "キャラクター占い師", href: "/vr/characters" },
-      { label: "スペシャルイベント", href: "/vr/events" },
+      { label: "VRで始める", href: "/start" },
+      { label: "セッションスケジュール", href: "/sessions" },
+      { label: "基礎コース", href: "/vr/courses" },
+      { label: "アカデミー", href: "/about/academy" },
     ],
   },
   {
-    title: "占いツール",
+    title: "占う・鑑定",
     items: [
-      { label: "AI占い - ORACLE", href: "/tools/oracle" },
-      { label: "タロット占い", href: "/tools/tarot" },
-      { label: "星座占い", href: "/tools/horoscope" },
-      { label: "数秘術", href: "/tools/numerology" },
-      { label: "手相診断", href: "/tools/palmistry" },
-      { label: "運勢カレンダー", href: "/tools/calendar" },
+      { label: "占い師・サービス一覧", href: "/fortune/tellers" },
+      { label: "タロット鑑定", href: "/fortune/tellers#tarot" },
+      { label: "ホロスコープ鑑定", href: "/fortune/tellers#horoscope" },
+      { label: "Blooming Bell占いの部屋", href: "/fortune/tellers#bb-room" },
     ],
   },
   {
-    title: "学ぶ・購入",
+    title: "ツール",
     items: [
-      { label: "占いの教科書", href: "/learn" },
-      { label: "ショップ", href: "/shop" },
+      { label: "AI鑑定 - ORACLE", href: "/tools/oracle" },
+      { label: "運勢カレンダー", href: "/fortune/calendar" },
+      { label: "書籍・テキスト", href: "/books" },
     ],
   },
   {
-    title: "Blooming Bellについて",
+    title: "サポート",
     items: [
-      { label: "ミッション", href: "/about/mission" },
-      { label: "開発チーム", href: "/about/team" },
-      { label: "世界観・ロア", href: "/about/lore" },
-      { label: "ユーザーの声", href: "/about/reviews" },
+      { label: "よくある質問", href: "/faq" },
+      { label: "お問い合わせ", href: "/contact" },
     ],
   },
 ];
