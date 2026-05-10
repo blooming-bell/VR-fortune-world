@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingCta from "@/components/layout/FloatingCta";
+import AnnouncementBanner from "@/components/layout/AnnouncementBanner";
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${notoSansJP.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-navy-950 text-white font-sans">
+        <AnnouncementBanner />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
